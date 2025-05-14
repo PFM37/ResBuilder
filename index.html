@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Resume Builder</h1>
+  <form id="resumeForm">
+    <input type="text" placeholder="Full Name" id="name" required><br>
+    <input type="text" placeholder="Email" id="email" required><br>
+    <textarea placeholder="Education" id="education"></textarea><br>
+    <textarea placeholder="Experience" id="experience"></textarea><br>
+    <textarea placeholder="Skills" id="skills"></textarea><br>
+    <button type="submit">Generate Resume</button>
+  </form>
+
+  <div id="resumePreview"></div>
+  <button onclick="downloadPDF()">Download as PDF</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
